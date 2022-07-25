@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2, h3{
+    margin: 0;
+}
+
+.banner {
+    width: 100%;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+
+.text{
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    font-style: italic;
+    color: white;
+}
+
+.logo {
+    font-size: 32px;
+}
+
+.info{
+    font-size: 18px;
+}
+
+.button-more{
+    display: inline-block;
+    margin-right: 16px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    color: white;
+    transition: all 0.3s;
+}
+.button-more:hover{
+    transform: translateX(6px);
+}
+
+.content{
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+}

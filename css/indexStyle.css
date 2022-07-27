@@ -51,8 +51,33 @@ h3 {
     max-width: 1000px;
     padding: 20px;
     margin: auto;
+    overflow: hidden;
 }
 
 .title {
+    color: #505050;
+}
+
+.summary {
+    font-size: 16px;
     font-weight: lighter;
+    font-style: italic;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+
+}
+
+@media screen and (max-width: 580px) {
+    .gallery {
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+
+img {
+    width: 100%;
 }

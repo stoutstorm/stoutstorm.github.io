@@ -8,7 +8,8 @@ a {
 }
 
 h2,
-h3 {
+h3,
+h4 {
     margin: 0;
 }
 
@@ -116,3 +117,30 @@ h3 {
 .gallery-item:hover .gallery-item-text {
     right: 0;
 }
+
+.saying {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+}
+@media screen and (max-width: 580px) {
+    .saying {
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+
+.saying-item {
+    width: 100%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-left: 3px solid #346dff;
+    color: #252525;
+    box-sizing: border-box;
+}
+
+.saying-item-time{
+    padding-top: 16px;
+    font-style: italic;
+}
+

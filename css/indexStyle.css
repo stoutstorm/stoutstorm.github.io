@@ -1,3 +1,13 @@
+.waring-info{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background-color: rgb(255, 141, 34);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -74,7 +84,6 @@ h4 {
     grid-template-columns: repeat(3, 32%);
     grid-row-gap: 16px;
     grid-column-gap: 16px;
-
 }
 
 @media screen and (max-width: 580px) {
@@ -86,7 +95,6 @@ h4 {
 .gallery-item {
     width: 100%;
     padding: 20px;
-    cursor: pointer;
     border: 1px solid rgb(150, 150, 150);
     box-sizing: border-box;
 }

@@ -21,9 +21,8 @@ h4 {
 
 .text {
     max-width: 1000px;
-    padding: 20px;
+    padding: 26px 20px 20px 20px;
     margin: auto;
-    font-style: italic;
     color: white;
 }
 
@@ -37,7 +36,7 @@ h4 {
 
 .button-more {
     display: inline-block;
-    margin-right: 16px;
+    margin-right: 18px;
     font-weight: bold;
     font-style: italic;
     font-size: 18px;
@@ -57,7 +56,10 @@ h4 {
 }
 
 .title {
-    color: #505050;
+    
+}
+.part{
+    margin: 20px 0 60px 0;
 }
 
 .summary {
@@ -83,35 +85,29 @@ h4 {
 
 .gallery-item {
     width: 100%;
-    overflow: hidden;
-    position: relative;
-    background-color: rgb(198, 198, 198);
-    cursor: pointer;
-}
-
-.gallery-item-img {
-    display: block;
-    width: 100%;
-    z-index: -1;
-    transition: 0.3s;
-}
-
-.gallery-item-text {
-    position: absolute;
-    top: 0;
-    right: 98%;
-    width: 100%;
-    height: 100%;
     padding: 20px;
-    transition: 0.3s;
-    background-color: #346dff;
+    cursor: pointer;
+    border: 1px solid rgb(150, 150, 150);
     box-sizing: border-box;
+}
+.gallery-item:hover {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+rgb(0, 0, 0)
+.gallery-item-text {
 }
 
 .gallery-item-summary {
-    text-align: center;
+    color: #505050;
+}
+.gallery-item-title{
+    margin-top: 14px;
+    color: #346dff;
     font-weight: bold;
-    color: white;
+}
+.gallery-item-img{
+    max-width: 100%;
 }
 
 .gallery-item:hover .gallery-item-text {
@@ -134,8 +130,7 @@ h4 {
 .saying-item {
     width: 100%;
     padding: 20px;
-    background-color: #f2f2f2;
-    border-left: 3px solid #346dff;
+    background-color: #f7f7f7;
     color: #252525;
     box-sizing: border-box;
 }

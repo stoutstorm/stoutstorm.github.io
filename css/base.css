@@ -1,29 +1,41 @@
 /* 
----------------------------------
-| main: #3B3486 | text: #FFE9B1 |
-| vice: #7743DB | text: #FCFDF2 |
----------------------------------
+-----------------------------------------
+| main: #3B3486 | small(title): #FFE9B1 |
+| vice: #7743DB | small(text): #FCFDF2  |
+-----------------------------------------
 */
 
 :root {
     --main-background-color: #3B3486;
+    --vice-background-color: #7743DB;
     --title-font-color: #FFE9B1;
     --text-font-color: #FCFDF2;
 }
 
 :root {
+    /* ===== */
+    --extreme-big-font-size: 45px;
     --big-font-size: 26px;
     --title-font-size: 24px;
-    --text-font-size: 20px;
-}
+    --text-font-size: 18px;
 
-body {
-    background-color: var(--main-background-color);
+    /* ===== */
+    --box-distances: 24px;
+    --small-box-distances: 8px;
+    --page-max-width: 1200px;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--title-font-color);
+}
+
+body {
+    color: var(--text-font-color);
+    font-size: var(--text-font-size);
+}
+
+p {
+    padding: var(--small-box-distances) 0;
 }

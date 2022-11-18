@@ -1,0 +1,29 @@
+/* 
+---------------------------------
+| main: #3B3486 | text: #FFE9B1 |
+| vice: #7743DB | text: #FCFDF2 |
+---------------------------------
+*/
+
+:root {
+    --main-background-color: #3B3486;
+    --title-font-color: #FFE9B1;
+    --text-font-color: #FCFDF2;
+}
+
+:root {
+    --big-font-size: 26px;
+    --title-font-size: 24px;
+    --text-font-size: 20px;
+}
+
+body {
+    background-color: var(--main-background-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--title-font-color);
+}

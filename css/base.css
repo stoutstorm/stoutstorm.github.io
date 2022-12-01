@@ -30,11 +30,3 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    font-size: var(--text-font-size);
-}
-
-p {
-    padding: var(--small-box-distances) 0;
-}

@@ -86,7 +86,7 @@
 .team-content-join {
     max-width: 800px;
     margin: auto;
-    padding: 40px;
+    padding: 38px 100px;
     background-color: #F4F4F6;
     border-radius: 8px;
 }
@@ -107,6 +107,6 @@
 .team-content-join-button {
     padding: 20px 50px;
     font-size: 18px;
-    background-color: #712EFF;
     border-radius: 8px;
+    background-color: #712EFF;
 }

@@ -40,7 +40,7 @@ a {
     border-bottom: 5px solid #B18CFF;
 }
 
-.content {
+.main-content {
     max-width: var(--content-max-width);
     margin: auto;
     padding: 0 var(--box-distances);

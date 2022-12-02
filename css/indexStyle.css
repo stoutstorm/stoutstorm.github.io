@@ -27,6 +27,7 @@
 
 /* === team === */
 .team-content {
+    margin-top: 80px;
     text-align: center;
     color: var(--dark-text-font-color);
 }
@@ -40,4 +41,72 @@
 .team-content-summary {
     font-size: 24px;
     margin-bottom: 50px;
+}
+
+.team-content-member {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin-bottom: 70px;
+}
+
+.team-content-member-item {
+    padding: 0 30px;
+}
+
+.team-content-member-item-avater {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.team-content-member-item-avater img {
+    margin: auto;
+    width: 100%
+}
+
+.team-content-member-item-username {
+    margin: 15px 0 5px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.team-content-member-item-position {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #bcbcbc;
+}
+
+.team-content-member-item-bio {
+    font-size: 16px;
+    color: #7b7b7b;
+}
+
+.team-content-join {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    background-color: #F4F4F6;
+    border-radius: 8px;
+}
+
+.team-content-join-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #181818;
+    margin-bottom: 10px;
+}
+
+.team-content-join-summary {
+    font-size: 18px;
+    color: #181818;
+    margin-bottom: 20px;
+}
+
+.team-content-join-button {
+    padding: 20px 50px;
+    font-size: 18px;
+    background-color: #712EFF;
+    border-radius: 8px;
 }

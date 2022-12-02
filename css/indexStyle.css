@@ -1,0 +1,43 @@
+.nav {
+    background-color: var(--nav-background-color);
+}
+
+.nav-content {
+    padding: 0 var(--box-distances);
+    margin: auto;
+    max-width: var(--content-max-width);
+    height: 90px;
+    line-height: 90px;
+    color: var(--text-font-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-content-logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-content-menu-item {
+    height: 90px;
+    font-size: 16px;
+    margin-left: 50px;
+}
+
+/* === team === */
+.team-content {
+    text-align: center;
+    color: var(--dark-text-font-color);
+}
+
+.team-content-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.team-content-summary {
+    font-size: 24px;
+    margin-bottom: 50px;
+}

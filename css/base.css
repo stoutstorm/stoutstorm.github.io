@@ -8,6 +8,8 @@
     --minor-text-color: #7B7B7B;
 
     --border-color: #BCBCBC;
+
+    --img-background: #D6D6D6;
 }
 
 :root {
@@ -48,7 +50,19 @@ a {
     padding: 0 var(--M-box-distances);
 }
 
+.main-content-title {
+    color: var(--text-color);
+    font-size: var(--L-title-font-size);
+    margin-bottom: var(--M-box-distances);
+}
 
 .main-content>div {
     margin-bottom: var(--L-box-distances);
+}
+
+/* === */
+.background-image {
+    background-image: url('../../public/images/342347928.jpg');
+    background-position: center;
+    background-size: cover;
 }

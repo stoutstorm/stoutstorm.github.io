@@ -70,12 +70,109 @@
 .head-content-form button {
     padding: 12px 20px;
     border: none;
-    color: white;
     border-radius: 8px;
+    color: white;
     background-color: var(--main-color);
 }
 
 .head-content-form-tip {
     color: var(--minor-text-color);
     font-size: var(--S-font-size);
+}
+
+/* === moment === */
+.moment-content-focus-tag .moment-content-other-tag {
+    margin-bottom: 12px;
+}
+
+.moment-content-tag-item {
+    margin-right: 8px;
+    padding: 3px 10px;
+    border-radius: 50px;
+    color: var(--main-color);
+    font-size: var(--S-font-size);
+    background-color: var(--main-color-alpha);
+}
+
+.moment-content {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 32px;
+}
+
+.moment-content-focus {
+    grid-row-end: span 2;
+}
+
+.moment-content-focus-img {
+    background-color: var(--img-background);
+}
+
+.moment-content-focus-img img {
+    width: 100%;
+}
+
+.moment-content-focus-date {
+    margin-top: var(--M-box-distances);
+    color: var(--main-color);
+    font-size: var(--S-font-size);
+}
+
+.moment-content-focus-title {
+    margin: 12px 0;
+    color: var(--text-color);
+    font-size: var(--L-title-font-size);
+}
+
+.moment-content-focus-summary {
+    margin-bottom: 24px;
+    color: var(--minor-text-color);
+    font-size: var(--M-font-size);
+}
+
+
+
+/* === */
+
+.moment-content-other {
+    display: flex;
+}
+
+.moment-content-other-img {
+    width: 55%;
+    flex-shrink: 0;
+    margin-right: 24px;
+    background-color: var(--img-background);
+}
+
+.moment-content-other-img img {
+    width: 100%;
+}
+
+.moment-content-other-date {
+    color: var(--main-color);
+    font-size: var(--S-font-size);
+
+}
+
+.moment-content-other-title {
+    margin: 12px 0 8px 0;
+    color: var(--text-color);
+    font-size: var(--M-title-font-size);
+}
+
+.moment-content-other-summary {
+    margin-bottom: 50px;
+    color: var(--minor-text-color);
+    font-size: var(--M-font-size);
+}
+
+.moment-content-other-info {
+    position: relative;
+}
+
+.moment-content-other-tag {
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }

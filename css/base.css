@@ -60,6 +60,24 @@ a {
     margin-bottom: var(--L-box-distances);
 }
 
+@media screen and (max-width: 600px) {
+    :root {
+        /* ===== */
+        --L-head-font-size: 34px;
+        --S-head-font-size: 18px;
+        --L-title-font-size: 20px;
+        --M-title-font-size: 18px;
+        --M-font-size: 16px;
+        --S-font-size: 14px;
+    
+        /* ===== */
+        --page-max-width: 1280px;
+        --L-box-distances: 86px;
+        --M-box-distances: 24px;
+        --S-box-distances: 8px;
+    }
+}
+
 /* === */
 .background-image {
     background-image: url('../../public/images/342347928.jpg');

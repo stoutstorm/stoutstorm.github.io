@@ -80,6 +80,12 @@
     font-size: var(--S-font-size);
 }
 
+@media screen and (max-width: 600px) {
+    .head-content-form input {
+        width: 210px;
+    }
+}
+
 /* === moment === */
 .moment-content-focus-tags,
 .moment-content-other-tags {
@@ -101,7 +107,7 @@
 .moment-content {
     display: grid;
     grid-template-columns: 48% 48%;
-    grid-gap: 32px;
+    grid-gap: var(--M-box-distances);
 }
 
 .moment-content-focus {
@@ -180,4 +186,18 @@
     margin-bottom: 60px;
     color: var(--minor-text-color);
     font-size: var(--M-font-size);
+}
+
+@media screen and (max-width: 600px) {
+    .moment-content {
+        grid-template-columns: 1fr;
+    }
+
+    .moment-content-focus {
+        grid-row-end: none;
+    }
+
+    .moment-content-other-img {
+        width: 40%;
+    }
 }

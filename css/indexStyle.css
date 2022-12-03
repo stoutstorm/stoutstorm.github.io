@@ -81,8 +81,12 @@
 }
 
 /* === moment === */
-.moment-content-focus-tag .moment-content-other-tag {
-    margin-bottom: 12px;
+.moment-content-focus-tags,
+.moment-content-other-tags {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 12px;
 }
 
 .moment-content-tag-item {
@@ -101,10 +105,14 @@
 }
 
 .moment-content-focus {
+    position: relative;
     grid-row-end: span 2;
 }
 
 .moment-content-focus-img {
+    /* == start == */
+    height: 300px;
+    /* == end == */
     background-color: var(--img-background);
 }
 
@@ -114,6 +122,7 @@
 
 .moment-content-focus-date {
     margin-top: var(--M-box-distances);
+    font-weight: bold;
     color: var(--main-color);
     font-size: var(--S-font-size);
 }
@@ -125,11 +134,10 @@
 }
 
 .moment-content-focus-summary {
-    margin-bottom: 24px;
+    margin-bottom: 60px;
     color: var(--minor-text-color);
     font-size: var(--M-font-size);
 }
-
 
 
 /* === */
@@ -149,7 +157,12 @@
     width: 100%;
 }
 
+.moment-content-other-info {
+    position: relative;
+}
+
 .moment-content-other-date {
+    font-weight: bold;
     color: var(--main-color);
     font-size: var(--S-font-size);
 
@@ -162,17 +175,7 @@
 }
 
 .moment-content-other-summary {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     color: var(--minor-text-color);
     font-size: var(--M-font-size);
-}
-
-.moment-content-other-info {
-    position: relative;
-}
-
-.moment-content-other-tag {
-    position: absolute;
-    left: 0;
-    bottom: 0;
 }

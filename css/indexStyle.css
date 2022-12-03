@@ -1,14 +1,14 @@
 .nav {
-    background-color: var(--nav-background-color);
+    box-shadow: 0 0 2px 2px #e9e9e9;
+    color: var(--text-color);
 }
 
 .nav-content {
-    padding: 0 var(--box-distances);
     margin: auto;
-    max-width: var(--content-max-width);
+    padding: 0 var(--M-box-distances);
+    max-width: var(--page-max-width);
     height: 90px;
     line-height: 90px;
-    color: var(--text-font-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,88 +25,57 @@
     margin-left: 50px;
 }
 
-/* === team === */
-.team-content {
-    margin-top: 80px;
+/* === head === */
+.head {
+    padding-top: var(--L-box-distances);
+}
+
+.head-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head-content-part {
+    color: var(--main-color);
+    font-size: var(--M-font-size);
+}
+
+.head-content-title {
+    margin: 12px 0 24px 0;
+    color: var(--text-color);
+    font-size: var(--L-head-font-size);
+}
+
+.head-content-summary {
+    max-width: 768px;
+    margin-bottom: 40px;
     text-align: center;
-    color: var(--dark-text-font-color);
+    color: var(--text-color);
+    font-size: var(--S-head-font-size);
 }
 
-.team-content-title {
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.head-content-form {
+    font-size: var(--M-font-size);
 }
 
-.team-content-summary {
-    font-size: 24px;
-    margin-bottom: 50px;
-}
-
-.team-content-member {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    margin-bottom: 70px;
-}
-
-.team-content-member-item {
-    padding: 0 30px;
-}
-
-.team-content-member-item-avater {
-    width: 120px;
-    height: 120px;
-    margin: auto;
-    border-radius: 100px;
-    overflow: hidden;
-}
-
-.team-content-member-item-avater img {
-    margin: auto;
-    width: 100%
-}
-
-.team-content-member-item-username {
-    margin: 15px 0 5px 0;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.team-content-member-item-position {
-    margin-bottom: 15px;
-    font-size: 18px;
-    color: #bcbcbc;
-}
-
-.team-content-member-item-bio {
-    font-size: 16px;
-    color: #7b7b7b;
-}
-
-.team-content-join {
-    max-width: 800px;
-    margin: auto;
-    padding: 38px 100px;
-    background-color: #F4F4F6;
+.head-content-form input {
+    width: 260px;
+    margin: 0 16px 8px 0;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
+    padding: 12px 16px;
 }
 
-.team-content-join-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #181818;
-    margin-bottom: 10px;
-}
-
-.team-content-join-summary {
-    font-size: 18px;
-    color: #181818;
-    margin-bottom: 20px;
-}
-
-.team-content-join-button {
-    padding: 20px 50px;
-    font-size: 18px;
+.head-content-form button {
+    padding: 12px 20px;
+    border: none;
+    color: white;
     border-radius: 8px;
-    background-color: #712EFF;
+    background-color: var(--main-color);
+}
+
+.head-content-form-tip {
+    color: var(--minor-text-color);
+    font-size: var(--S-font-size);
 }

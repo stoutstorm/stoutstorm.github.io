@@ -1,27 +1,29 @@
-/* 
------------------------------------------
-| main: #3B3486 | small(title): #FFE9B1 |
-| vice: #7743DB | small(text): #FCFDF2  |
------------------------------------------
-*/
-
 :root {
     --nav-background-color: #181818;
-    --text-font-color: #ffffff;
-    --dark-text-font-color: #181818;
+
+    --main-color: #712EFF;
+    --main-color-alpha: rgba(113, 46, 255, 0.1);
+
+    --text-color: #181818;
+    --minor-text-color: #7B7B7B;
+
+    --border-color: #BCBCBC;
 }
 
 :root {
     /* ===== */
-    --extreme-big-font-size: 45px;
-    --big-font-size: 26px;
-    --title-font-size: 24px;
-    --text-font-size: 18px;
+    --L-head-font-size: 48px;
+    --S-head-font-size: 20px;
+    --L-title-font-size: 24px;
+    --M-title-font-size: 18px;
+    --M-font-size: 16px;
+    --S-font-size: 14px;
 
     /* ===== */
-    --box-distances: 25px;
-    --small-box-distances: 8px;
-    --content-max-width: 1440px;
+    --page-max-width: 1280px;
+    --L-box-distances: 96px;
+    --M-box-distances: 32px;
+    --S-box-distances: 8px;
 }
 
 * {
@@ -33,15 +35,20 @@
 a {
     display: inline-block;
     text-decoration: none;
-    color: var(--text-font-color);
+    color: var(--text-color);
 }
 
 .active {
-    border-bottom: 5px solid #B18CFF;
+    border-bottom: 5px solid var(--main-color);
 }
 
 .main-content {
-    max-width: var(--content-max-width);
     margin: auto;
-    padding: 0 var(--box-distances);
+    max-width: var(--page-max-width);
+    padding: 0 var(--M-box-distances);
+}
+
+
+.main-content>div {
+    margin-bottom: var(--L-box-distances);
 }

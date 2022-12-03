@@ -110,14 +110,14 @@
 }
 
 .moment-content-focus-img {
-    /* == start == */
-    height: 300px;
-    /* == end == */
+    font-size: 0;
     background-color: var(--img-background);
 }
 
 .moment-content-focus-img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .moment-content-focus-date {
@@ -155,6 +155,8 @@
 
 .moment-content-other-img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .moment-content-other-info {

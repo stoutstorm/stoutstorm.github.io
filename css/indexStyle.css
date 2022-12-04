@@ -1,6 +1,8 @@
 .nav {
-    box-shadow: 0 0 2px 2px #e9e9e9;
+    height: 90px;
     color: var(--text-color);
+    box-shadow: 0 0 2px 2px #e9e9e9;
+    background-color: var(--nav-background-color);
 }
 
 .nav-content {
@@ -23,6 +25,43 @@
     height: 90px;
     font-size: 16px;
     margin-left: 50px;
+}
+
+.menu-button {
+    display: none;
+
+    /*  */
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('../../public/menu.png');
+    background-size: 100%;
+    border: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-content-menu {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 9999;
+        top: 90px;
+        left: 0;
+        border-top: 1px solid var(--border-color);
+        background-color: white;
+    }
+
+    .nav-content-menu-item {
+        display: block;
+        text-align: center;
+        margin: 0;
+        border: none;
+        font-weight: bold;
+    }
+
+    .menu-button {
+        display: block;
+    }
 }
 
 /* === head === */
@@ -86,16 +125,15 @@
     }
 }
 
-/* === moment === */
-.moment-content-focus-tags,
-.moment-content-other-tags {
+/* === main content === */
+.tags {
     position: absolute;
     left: 0;
     bottom: 0;
     padding-bottom: 12px;
 }
 
-.moment-content-tag-item {
+.tag-item {
     margin-right: 8px;
     padding: 3px 10px;
     border-radius: 50px;
@@ -104,6 +142,7 @@
     background-color: var(--main-color-alpha);
 }
 
+/* === moment === */
 .moment-content {
     display: grid;
     grid-template-columns: 48% 48%;
@@ -201,3 +240,52 @@
         width: 40%;
     }
 }
+
+/* === project === */
+.project-content {
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    grid-gap: var(--M-box-distances);
+}
+
+.project-content-item {
+    position: relative;
+}
+
+.project-content-item-img {
+    font-size: 0;
+    background-color: var(--img-background);
+}
+
+.project-content-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-content-item-date {
+    margin-top: var(--M-box-distances);
+    font-weight: bold;
+    color: var(--main-color);
+    font-size: var(--S-font-size);
+}
+
+.project-content-item-title {
+    margin: 12px 0;
+    color: var(--text-color);
+    font-size: var(--L-title-font-size);
+}
+
+.project-content-item-summary {
+    margin-bottom: 60px;
+    color: var(--minor-text-color);
+    font-size: var(--M-font-size);
+}
+
+@media screen and (max-width: 600px) {
+    .project-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* === footer === */

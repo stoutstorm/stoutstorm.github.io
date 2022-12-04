@@ -1,5 +1,5 @@
 :root {
-    --nav-background-color: #181818;
+    --nav-background-color: white;
 
     --main-color: #712EFF;
     --main-color-alpha: rgba(113, 46, 255, 0.1);
@@ -69,7 +69,7 @@ a {
         --M-title-font-size: 18px;
         --M-font-size: 16px;
         --S-font-size: 14px;
-    
+
         /* ===== */
         --page-max-width: 1280px;
         --L-box-distances: 86px;

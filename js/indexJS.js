@@ -1,8 +1,3 @@
-window.onload = () => {
-    setNav()
-    window.addEventListener('resize', setNav)
-}
-
 const menu = document.getElementsByClassName('nav-content-menu')
 
 const setMenu = () => {
@@ -15,4 +10,7 @@ const setNav = () => {
     menu[0].style.display =
         eval(document.body.clientWidth) > eval(600) ? 'block' : 'none'
 }
+
+setNav()
+window.addEventListener('resize', setNav)
 

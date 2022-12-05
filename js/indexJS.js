@@ -13,4 +13,3 @@ const setNav = () => {
 
 setNav()
 window.addEventListener('resize', setNav)
-

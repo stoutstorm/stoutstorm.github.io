@@ -284,7 +284,7 @@
 .project-content {
     display: grid;
     grid-template-columns: repeat(3, 31%);
-    grid-gap: var(--M-box-distances);
+    gap: var(--M-box-distances);
 }
 
 .project-content-item {
@@ -336,7 +336,7 @@
 .footer-content-nav {
     display: grid;
     grid-template-columns: repeat(4, 23%);
-    grid-gap: var(--M-box-distances);
+    gap: var(--M-box-distances);
 }
 
 .footer-content-nav-item-title {

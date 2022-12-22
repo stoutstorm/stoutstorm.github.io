@@ -180,7 +180,7 @@
 .moment-content {
     display: grid;
     grid-template-columns: repeat(2, 48%);
-    grid-gap: var(--M-box-distances);
+    gap: var(--M-box-distances);
 }
 
 .moment-content-focus {
